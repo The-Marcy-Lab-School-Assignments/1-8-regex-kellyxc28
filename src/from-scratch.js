@@ -1,4 +1,6 @@
-const helloWorldRegex = (str) => {};
+const helloWorldRegex = (str) => {
+    return /Hello World/gi.test(str);
+};
 
 const hasAVowel = (str) => {};
 
