@@ -38,7 +38,9 @@ const isValidEmail = (str) => {
   return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(str);
 };
 
-const isValidPhoneNumber = (str) => {};
+const isValidPhoneNumber = (str) => {
+  return /^[(]?[\d]{3}[)]?[-\s\.]+[\d]{3}[-\s\.]+[\d]{4}$/.test(str);
+};
 
 const matchAllNumbers = (str) => {};
 
