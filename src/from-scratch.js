@@ -26,7 +26,17 @@ const hasNoFlippers = (str) => {
   return /^[^BCcDEHIKOoXxl]*$/.test(str);
 };
 
-const isValidEmail = (str) => {};
+const isValidEmail = (str) => {
+  // ^              start  
+  // [\w-\.]        includes words (letter, digit, or underscore), hyphen, and period 
+  // +              one or more of this   
+  // @              @ symbol 
+  // ([\w-]+\.)     includes words (letter, digit, or underscore), hyphen, and period  
+  // [\w-]          includes words (letter, digit, or underscore), and hyphen  
+  // {2,4}          limit 2-4 characters 
+  // $              end 
+  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(str);
+};
 
 const isValidPhoneNumber = (str) => {};
 
