@@ -1,8 +1,10 @@
 const helloWorldRegex = (str) => {
-    return /Hello World/gi.test(str);
+  return /Hello World/gi.test(str);
 };
 
-const hasAVowel = (str) => {};
+const hasAVowel = (str) => {
+  return /[aeiou]/gi.test(str);
+};
 
 const hasCatsOrDogs = (str) => {};
 
