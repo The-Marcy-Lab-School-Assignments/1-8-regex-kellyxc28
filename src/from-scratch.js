@@ -6,6 +6,7 @@ const hasAVowel = (str) => {
   return /[aeiou]/gi.test(str);
 };
 
+
 const hasCatsOrDogs = (str) => {
   return /(cats|dogs)/gi.test(str);
 };
