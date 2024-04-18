@@ -46,7 +46,11 @@ const matchAllNumbers = (str) => {
   return str.match(/\d+/g) || [];
 };
 
-const matchAllNumbersAsNumbers = (str) => {};
+const matchAllNumbersAsNumbers = (str) => {
+  // + turns string into number 
+  const regex = str.match(/\d+/g);
+  return regex === null ? [] : regex.map((num) => +num);
+};
 
 const matchAllWords = (str) => {};
 
