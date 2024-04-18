@@ -22,7 +22,9 @@ const hasNothingOrDigits = (str) => {
   return /(^\s*\d*$)/gi.test(str);
 };
 
-const hasNoFlippers = (str) => {};
+const hasNoFlippers = (str) => {
+  return /^[^BCcDEHIKOoXxl]*$/.test(str);
+};
 
 const isValidEmail = (str) => {};
 
