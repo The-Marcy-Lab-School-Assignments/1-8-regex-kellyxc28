@@ -18,7 +18,9 @@ const hasPunctuationEnd = (str) => {
   return /[.!?]$/gi.test(str);
 };
 
-const hasNothingOrDigits = (str) => {};
+const hasNothingOrDigits = (str) => {
+  return /(^\s*\d*$)/gi.test(str);
+};
 
 const hasNoFlippers = (str) => {};
 
