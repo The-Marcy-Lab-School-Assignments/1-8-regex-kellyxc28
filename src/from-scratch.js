@@ -57,7 +57,9 @@ const matchAllWords = (str) => {
   return regex === null ? [] : regex;
 };
 
-const replaceAllNumbers = (str) => {};
+const replaceAllNumbers = (str) => {
+  return str.replace((/\d+/g), '???');
+};
 
 const fixFileName = (str) => {};
 
