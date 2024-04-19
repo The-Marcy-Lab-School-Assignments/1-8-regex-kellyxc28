@@ -52,7 +52,10 @@ const matchAllNumbersAsNumbers = (str) => {
   return regex === null ? [] : regex.map((num) => +num);
 };
 
-const matchAllWords = (str) => {};
+const matchAllWords = (str) => {
+  const regex = str.match(/([A-Za-z][']?)+/g);
+  return regex === null ? [] : regex;
+};
 
 const replaceAllNumbers = (str) => {};
 
