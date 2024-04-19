@@ -65,7 +65,9 @@ const fixFileName = (str) => {
   return str.replace((/\s+/g), '_');
 };
 
-const nameRedacter = (str) => {};
+const nameRedacter = (str) => {
+  return str.replace((/\w[B-Z^AI]+/g), 'REDACTED');
+};
 
 const camelToSnakeCase = (str) => {};
 
