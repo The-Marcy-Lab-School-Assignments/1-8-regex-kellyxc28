@@ -69,7 +69,13 @@ const nameRedacter = (str) => {
   return str.replace((/\w[B-Z^AI]+/g), 'REDACTED');
 };
 
-const camelToSnakeCase = (str) => {};
+const replaceLetterCase = (letter) => {
+  return `_${letter.toLowerCase()}`;
+}
+
+const camelToSnakeCase = (str) => {
+  return str.replace((/[A-Z]+/g), replaceLetterCase);
+};
 
 module.exports = {
   helloWorldRegex,
